@@ -107,3 +107,90 @@ html,body { height:100%;
    gap:5px;
    margin-top:12px;
 }
+
+
+
+/* Main area */
+.main {
+  grid-area: main;
+  background: transparent;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+
+/* Topbar (header inside main) */
+.topbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:18px 20px;
+  background: #fff;
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(20,30,40,0.06);
+  height:72px;
+}
+
+.search{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#f1f5f9;
+    padding:8px 12px;
+    border-radius:999px;
+    width:60%; 
+}
+
+.search input {
+    border:0;
+    background:transparent;
+    outline:none;
+    width:100%;
+    font-size:14px;
+ }
+
+.actions{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+
+/* Buttons */
+.btn {
+  background:#0b93d5;
+  color:white;
+  border:0;
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:600;
+}
+
+.btn.ghost {
+    background:#eff6fb;
+    color:#0b93d5;
+}
+
+/* Content */
+.content { padding:6px 2px; }
+.content h2 {
+    margin:0 0 12px 6px;
+    font-size:18px;
+}
+
+
+/* Placeholder grid for cards */
+.placeholder-grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+}
+.card {
+  background:#fff;
+  border-radius:10px;
+  padding:18px;
+  min-height:100px;
+  box-shadow: 0 8px 20px rgba(20,30,40,0.06);
+}
