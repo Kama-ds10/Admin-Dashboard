@@ -194,3 +194,24 @@ html,body { height:100%;
   min-height:100px;
   box-shadow: 0 8px 20px rgba(20,30,40,0.06);
 }
+
+
+/* Right column */
+.rightcol {
+  grid-area: right;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  height: fit-content;
+}
+
+.widget {
+    background: #fff;
+    padding:14px;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(20,30,40,0.06);
+}
+.widget h3 {
+    margin:0 0 10px 0;
+    font-size:15px;
+}
