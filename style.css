@@ -42,6 +42,10 @@ html,body {
 }  
 
 
+
+
+
+
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
@@ -387,4 +391,112 @@ html,body {
 .trend p {
   font-size: 0.85rem;
   color: #555;
+}
+
+/* responsive layout */
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "sidebar main"
+      "sidebar main";
+  }
+
+  .announcements,
+  .trending {
+    display: none; /* Hide right column for tablets */
+  }
+
+  .main {
+    padding-right: 0;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .actions button {
+    padding: 6px 12px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main";
+    padding: 12px;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 50;
+    padding: 12px 16px;
+  }
+
+  .greeting h1 {
+    font-size: 1rem;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+
+  .projects h2 {
+    font-size: 1.1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .btn,
+  .btn.ghost {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Very small screens (below 480px) */
+@media (max-width: 480px) {
+  .greeting h1 {
+    font-size: 0.95rem;
+  }
+
+  .greeting p {
+    font-size: 0.8rem;
+  }
+
+  .btn,
+  .btn.ghost {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
 }
