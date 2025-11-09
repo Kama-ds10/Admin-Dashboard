@@ -292,26 +292,81 @@ html,body { height:100%;
 }
 
 
-
-
-
-
-/* Right column */
-.rightcol {
-  grid-area: right;
-  display:flex;
-  flex-direction:column;
-  gap:18px;
-  height: fit-content;
+/* announcement and trend */
+.announcements,
+.trending {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
 }
 
-.widget {
-    background: #fff;
-    padding:14px;
-    border-radius:10px;
-    box-shadow: 0 6px 18px rgba(20,30,40,0.06);
+.announcements h2,
+.trending h2 {
+  color: #0b93d5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
-.widget h3 {
-    margin:0 0 10px 0;
-    font-size:15px;
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.announcement {
+  border-bottom: 1px solid #e6eefc;
+  padding-bottom: 0.8rem;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+}
+
+
+.announcement h3 {
+  color: #0b93d5;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+
+.announcement p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.trend img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.trend h4 {
+  font-size: 0.95rem;
+  color: #0b93d5;
+  margin-bottom: 0.2rem;
+}
+
+.trend p {
+  font-size: 0.85rem;
+  color: #555;
 }
