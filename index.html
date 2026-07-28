@@ -3,143 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin DashBoard</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div class="dashboard-grid">
+  <div class="dashboard-grid">
     <!-- SIDEBAR -->
-<aside class="sidebar" aria-label="Main navigation">
-  <div class="brand">
-    <div class="brand-logo" aria-hidden="true">⚡</div>
-    <span class="brand-text">SHIFT<span class="thin"> Code</span> Dashboard</span>
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">⚡</div>
+        <span class="brand-text">SHIFT<span class="thin"> Code</span></span>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <a class="nav-item active" href="#"><span class="icon" aria-hidden="true">🏠</span> Overview</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">👥</span> Users</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🧩</span> Projects</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">💬</span> Messages</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🗂️</span> Files</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">⚙️</span> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">📈</span> Analytics</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">💡</span> Tips</a>
+        <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🔒</span> Logout</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main">
+      <header class="topbar">
+        <div class="greeting">
+          <h1>Welcome back, <span>Kama Seleye-Fubara 👋</span></h1>
+          <p>Manage your SHIFT Code projects efficiently</p>
+        </div>
+        <div class="actions">
+          <button class="btn">New Project</button>
+          <button class="btn ghost">Upload</button>
+        </div>
+      </header>
+
+      <section class="projects">
+        <h2>Your Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Admin Dashboard</h3>
+            <p>Building a responsive admin interface using CSS Grid.</p>
+            <div class="card-actions">
+              <button class="btn-view">View</button>
+              <button class="btn-edit">Edit</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>SHIFT Culture Store</h3>
+            <p>Fashion branch project focused on e-commerce and product design.</p>
+            <div class="card-actions">
+              <button class="btn-view">View</button>
+              <button class="btn-edit">Edit</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>SHIFT Culture Store</h3>
+            <p>Fashion branch project focused on e-commerce and product design.</p>
+            <div class="card-actions">
+              <button class="btn-view">View</button>
+              <button class="btn-edit">Edit</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>SHIFT Code Portfolio</h3>
+            <p>Personal portfolio showcasing web development skills.</p>
+            <div class="card-actions">
+              <button class="btn-view">View</button>
+              <button class="btn-edit">Edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RIGHT SIDEBAR PANEL (The missing piece!) -->
+    <aside class="right-panel">
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcement-list">
+          <div class="announcement">
+            <h3>Dashboard Update</h3>
+            <p>We’ve rolled out a new UI improvement across the dashboard.</p>
+          </div>
+          <div class="announcement">
+            <h3>SHIFT Culture Launch</h3>
+            <p>Our fashion branch launches this month.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-list">
+          <div class="trend">
+            <div class="avatar">KS</div>
+            <div>
+              <h4>Kama S.</h4>
+              <p>Admin</p>
+            </div>
+          </div>
+          <div class="trend">
+            <div class="avatar cultural">SC</div>
+            <div>
+              <h4>@shiftculture</h4>
+              <p>Fashion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
   </div>
 
-  <nav class="nav" role="navigation" aria-label="Primary">
-    <a class="nav-item active" href="#"><span class="icon" aria-hidden="true">🏠</span> Overview</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">👥</span> Users</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🧩</span> Projects</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">💬</span> Messages</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🗂️</span> Files</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">⚙️</span> Settings</a>
-  </nav>
-
-  <div class="sidebar-footer">
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">📈</span> Analytics</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">💡</span> Tips</a>
-    <a class="nav-item" href="#"><span class="icon" aria-hidden="true">🔒</span> Logout</a>
-  </div>
-</aside>
-
-    
-    
-<!-- MAIN (header + content) -->
-<main class="main">
-  <header class="topbar">
-    <div class="greeting">
-      <h1>Welcome back, <span>Kama Seleye-Fubara 👋</span></h1>
-      <p>Manage your SHIFT Code projects efficiently</p>
-    </div>
-
-    <div class="actions">
-      <button class="btn">New Project</button>
-      <button class="btn ghost">Upload</button>
-      <button class="btn ghost">Share</button>
-    </div>
-  </header>
-
- <section class="projects">
-  <h2>Your Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Admin Dashboard</h3>
-      <p>Building a responsive admin interface using CSS Grid.</p>
-      <div class="card-actions">
-        <button class="btn-view">View</button>
-        <button class="btn-edit">Edit</button>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>SHIFT Culture Store</h3>
-      <p>Fashion branch project focused on e-commerce and product design.</p>
-      <div class="card-actions">
-        <button class="btn-view">View</button>
-        <button class="btn-edit">Edit</button>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>SHIFT Code Portfolio</h3>
-      <p>Personal portfolio showcasing web development skills.</p>
-      <div class="card-actions">
-        <button class="btn-view">View</button>
-        <button class="btn-edit">Edit</button>
-      </div>
-    </div>
-
-
-
-    <div class="project-card">
-      <h3>SHIFT Code Portfolio</h3>
-      <p>Personal portfolio showcasing web development skills.</p>
-      <div class="card-actions">
-        <button class="btn-view">View</button>
-        <button class="btn-edit">Edit</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-    <!-- announcement -->
-  <section class="announcements">
-  <h2>Announcements</h2>
-  <div class="announcement-list">
-    <div class="announcement">
-      <h3>Dashboard Update</h3>
-      <p>We’ve rolled out a new UI improvement across the SHIFT Code dashboard. Explore the new features now.</p>
-    </div>
-    <div class="announcement">
-      <h3>SHIFT Culture Launch</h3>
-      <p>Our fashion branch SHIFT Culture officially launches this month — join the movement and get early access.</p>
-    </div>
-    <div class="announcement">
-      <h3>Community Meetup</h3>
-      <p>Join our next SHIFT Code community session on productivity and tech career growth.</p>
-    </div>
-  </div>
-</section>
-
-<!-- trending -->
-<section class="trending">
-  <h2>Trending</h2>
-  <div class="trending-list">
-    <div class="trend">
-      <img src="images/profile.png" alt="User profile">
-      <div>
-        <h4>@kamazd1234@gmail.com</h4>
-        <p>SHIFT Code Admin</p>
-      </div>
-    </div>
-    <div class="trend">
-      <img src="images/profile.png" alt="User profile">
-      <div>
-        <h4>@shiftculture</h4>
-        <p>Fashion Project</p>
-      </div>
-    </div>
-    <div class="trend">
-      <img src="images/profile.png" alt="User profile">
-      <div>
-        <h4>@shiftjournal</h4>
-        <p>Digital Product</p>
-      </div>
-    </div>
-  </div>
-</section>
-  </div>
 </body>
 </html>
